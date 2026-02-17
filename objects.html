@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+/*        let book = {
+            title: "Outliers",
+            published: 2011,
+            keywords: ["success", "high-achievers"]
+        };
+
+        console.log(book.title);
+        console.log(book.keywords);
+
+
+        
+       let book = {
+            title: "Outliers",
+            published: 2011,
+            keywords: ["success", "high-achievers"],
+            author: {
+                firstName: "Malcolm",
+                lastName: "Gladwell"
+            }
+        };
+
+        console.log(book.author.lastName);
+
+*/
+
+/*    let book = {
+        title: "Hatching Twitter",
+        published: 2013,
+        keywords: ["origins", "betrayal", "social media"],
+        author: {
+            firstName: "Nick",
+            lastName: "Bilton"
+        }
+    };
+
+        book.published = 2014; //Changes year published to 2014
+        book.isbn = "1591846013"; // Adds a new property called isbn 
+        book.author.lastName = "Jack"; // Assigns the author object's first name property with "Jack", replaces author's previous name
+        book.keywords.pop(); // Removes last element in keywords array
+*/
+        // Defining a method in an object literal
+
+        let book = {
+            title: "Quiet",
+            author: {
+                firstName: "Susan",
+                lastName: "Cain"
+            },
+
+            getAuthorName: function() {
+                return this.author.firstName + " " + this.author.lastName;
+            }
+        };
+
+        let name = book.getAuthorName();
+    
+    </script>
+</body>
+</html>
